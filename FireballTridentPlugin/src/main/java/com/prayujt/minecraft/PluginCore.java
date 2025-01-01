@@ -11,16 +11,15 @@ public class PluginCore extends JavaPlugin {
     @Override
     public void onEnable(){
         // Fired when server plugin is first enabled
-	FireballEventListener fireballListener = new FireballEventListener(this);
-	JoinEventListener joinListener = new JoinEventListener(this);
-	RespawnEventListener respawnListener = new RespawnEventListener(this);
+        FireballEventListener fireballListener = new FireballEventListener(this);
+        JoinEventListener joinListener = new JoinEventListener(this);
+        RespawnEventListener respawnListener = new RespawnEventListener(this);
 
-	getLogger().info("Fireball plugin enabled!");
+        getLogger().info("Fireball plugin enabled!");
     }
 
     @Override
     public void onDisable(){
         // Fired when the server stops and disables all plugins
     }
-
 }
