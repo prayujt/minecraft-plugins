@@ -1,8 +1,8 @@
-package com.prayujt.minecraft;
+package com.prayujt.minecraft.FireballTrident;
 
-import com.prayujt.minecraft.listeners.JoinEventListener;
-import com.prayujt.minecraft.listeners.RespawnEventListener;
-import com.prayujt.minecraft.listeners.FireballEventListener;
+import com.prayujt.minecraft.FireballTrident.listeners.JoinEventListener;
+import com.prayujt.minecraft.FireballTrident.listeners.RespawnEventListener;
+import com.prayujt.minecraft.FireballTrident.listeners.FireballEventListener;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

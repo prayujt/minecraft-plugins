@@ -1,6 +1,6 @@
-package com.prayujt.minecraft.listeners;
+package com.prayujt.minecraft.FireballTrident.listeners;
 
-import com.prayujt.minecraft.PluginCore;
+import com.prayujt.minecraft.FireballTrident.PluginCore;
 
 import org.bukkit.GameMode;
 import org.bukkit.Material;
