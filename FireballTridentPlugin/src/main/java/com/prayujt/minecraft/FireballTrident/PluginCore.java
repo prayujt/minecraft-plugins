@@ -15,7 +15,7 @@ public class PluginCore extends JavaPlugin {
         JoinEventListener joinListener = new JoinEventListener(this);
         RespawnEventListener respawnListener = new RespawnEventListener(this);
 
-        getLogger().info("Fireball plugin enabled!");
+        getLogger().info("FireballTridentPlugin has been enabled.");
     }
 
     @Override
