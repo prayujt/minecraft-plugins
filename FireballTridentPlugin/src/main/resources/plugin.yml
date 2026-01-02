@@ -3,3 +3,8 @@ version: 1.0
 api-version: 1.20
 
 main: com.prayujt.minecraft.FireballTrident.PluginCore
+
+commands:
+  duel:
+    description: Start a duel with a player
+    usage: /duel <player>
