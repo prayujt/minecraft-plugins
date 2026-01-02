@@ -29,6 +29,7 @@ public class RespawnEventListener implements Listener {
                 meta.addEnchant(Enchantment.LOYALTY, 3, true);
                 meta.addEnchant(Enchantment.DURABILITY, 3, true);
                 meta.addEnchant(Enchantment.CHANNELING, 1, true);
+                // meta.addEnchant(Enchantment.RIPTIDE, 1, true);
 
                 trident.setItemMeta(meta);
             }
@@ -38,6 +39,22 @@ public class RespawnEventListener implements Listener {
         if (!player.getInventory().contains(Material.FIRE_CHARGE)) {
             ItemStack fireCharge = new ItemStack(Material.FIRE_CHARGE, 64);
             player.getInventory().addItem(fireCharge);
+        }
+
+        if (!player.getInventory().contains(Material.BOW)) {
+            ItemStack bow = new ItemStack(Material.BOW);
+            ItemMeta meta = bow.getItemMeta();
+            if (meta != null) {
+                meta.addEnchant(Enchantment.ARROW_DAMAGE, 5, true);
+                meta.addEnchant(Enchantment.ARROW_KNOCKBACK, 2, true);
+                meta.addEnchant(Enchantment.ARROW_FIRE, 1, true);
+                bow.setItemMeta(meta);
+            }
+            player.getInventory().addItem(bow);
+        }
+        
+        if (!player.getInventory().contains(Material.SPECTRAL_ARROW)) {
+            player.getInventory().addItem(new ItemStack(Material.SPECTRAL_ARROW, 64));
         }
     }
 }

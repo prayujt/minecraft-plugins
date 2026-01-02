@@ -21,10 +21,9 @@ public class FireballEventListener implements Listener {
     public void onPlayerInteract(PlayerInteractEvent event) {
         Player player = event.getPlayer();
 
-        if (player.getItemInHand().getType() == Material.FIRE_CHARGE) {
+        if (player.getInventory().getItemInMainHand().getType() == Material.FIRE_CHARGE) {
             event.setCancelled(true);
             Fireball fireball = player.getWorld().spawn(player.getLocation().add(new Vector(0.0D, 2.0D, 0.0D)), Fireball.class);
-            fireball.setBounce(true);
             fireball.setShooter(player);
             fireball.setYield(2.0f);
 
