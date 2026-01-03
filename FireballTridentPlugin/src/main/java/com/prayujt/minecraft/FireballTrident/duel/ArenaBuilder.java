@@ -8,10 +8,6 @@ import org.bukkit.block.Block;
 public final class ArenaBuilder {
     private ArenaBuilder() {}
 
-    /**
-     * Builds a flat square platform centered at center (X/Z), at center Y.
-     * size must be even or odd; this handles both.
-     */
     public static void buildPlatform(Location center, int size, Material material) {
         World w = center.getWorld();
         if (w == null) return;
